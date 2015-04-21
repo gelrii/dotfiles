@@ -11,6 +11,7 @@ alias dt='df -HT | grep T' #Ditto the above command but simply grep to show only
 alias open='xdg-open' #Allow using open command to open a file with the default application
 alias md5='md5sum'
 alias sha256='sha256sum'
+alias remote-server='sshfs gelrii@92.238.187.160:/mnt /home/gelrii/Shares/SSHFS -p 58510'
 
 # Package Management
 alias autoremove='sudo yum autoremove'
