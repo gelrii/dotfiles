@@ -11,14 +11,12 @@ alias dt='df -HT | grep T' #Ditto the above command but simply grep to show only
 alias open='xdg-open' #Allow using open command to open a file with the default application
 alias md5='md5sum'
 alias sha256='sha256sum'
-alias remote-server='sshfs gelrii@92.238.187.160:/mnt /home/gelrii/Shares/SSHFS -p 58510'
 
 # Package Management
-alias autoremove='sudo yum autoremove'
-alias install='sudo yum install'
-alias update='sudo yum update'
-alias search='sudo yum search'
-alias yc='sudo cat /etc/yum/yum-cron.conf | grep apply_updates' # Quick command to determine whether automatic updates are enabled on the target system.
+alias autoremove='sudo dnf autoremove'
+alias install='sudo dnf install'
+alias update='sudo dnf update'
+alias search='sudo dnf search'
 
 # Power Management
 alias suspend='sudo pm-suspend' #It's a bad idea to just alias "sleep" as it's used as a wait command in shell scripts
@@ -29,6 +27,7 @@ alias hibernate='sudo pm-hibernate'
 alias temps='watch sensors'
 alias entropy="cat /proc/sys/kernel/random/entropy_avail"
 alias specs="phoronix-test-suite system-info"
+alias info="$HOME/.dotscripts/systeminfo.sh"
 alias suptime='systemd-analyze'
 alias supgraph='systemd-analyze plot > /tmp/startup.svg && xdg-open /tmp/startup.svg'
 
@@ -38,7 +37,7 @@ alias killit='echo -ne "Enter process name: "; read Process; ps aux | grep $Proc
 alias rec='recordmydesktop -o $HOME/ScreenRec_`date +%F_%R`.ogv'
 
 # Applications
-alias tor='$HOME/Tor/start-tor-browser'
+alias tor='$HOME/Tor/Browser/start-tor-browser'
 
 # Force Root
 alias iftop='sudo iftop'
