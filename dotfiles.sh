@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Installing dependancies..."
-sudo dnf install recordmydesktop livestreamer rtmpdump zenity mpv aria2 youtube_dl phoronix-test-suite
+sudo dnf install recordmydesktop livestreamer rtmpdump zenity mpv aria2 youtube-dl phoronix-test-suite
 echo "Complete!"
 echo "Grabbing dotfiles..."
 git clone https://github.com/gelrii/dotfiles/.dotscripts/ ~/.dotscripts/
