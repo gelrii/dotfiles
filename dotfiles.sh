@@ -11,7 +11,7 @@ sudo dnf install phoronix-test-suite /
 	youtube_dl
 echo "Complete!"
 echo "Grabbing dotfiles..."
-git clone https://github.com/gelrii/dotscripts.git ~/.dotscripts/
+git clone https://github.com/gelrii/dotfiles.git ~/.dotscripts/
 curl -o /home/`whoami`/.bashrc https://raw.githubusercontent.com/gelrii/dotfiles/master/.bashrc
 curl -o /home/`whoami`/.bash_aliases https://raw.githubusercontent.com/gelrii/dotfiles/master/.bash_aliases
 echo "Complete!"
