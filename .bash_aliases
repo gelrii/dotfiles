@@ -36,6 +36,7 @@ alias rec="recordmydesktop -o $HOME/ScreenRec_`date +%F_%R`.ogv"
 
 # Applications
 alias tor="$HOME/Tor/Browser/start-tor-browser"
+alias git-push="git add --all && git commit && git push -u origin master"
 
 # Force Root
 alias iftop="sudo iftop"
