@@ -48,4 +48,4 @@ alias netstat="sudo netstat"
 # Multimedia
 alias stream="sh $HOME/.dotscripts/stream.sh"
 alias streamrec="sh $HOME/.dotscripts/streamrec.sh"
-alias youtube="sh $HOME/Scripts/YouTube/YouTube.sh"
+alias youtube="sh $HOME/.dotscripts/YouTube.sh"
